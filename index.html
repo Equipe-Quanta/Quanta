@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EquipeQuanta</title>
+    <link rel="stylesheet" href="cabecalho.css">
+    <link rel="stylesheet" href="corpo.css">
+</head>
+<body>
+    <header>
+        <script>
+            window.addEventListener("scroll", function () {
+                let header = document.querySelector("header");
+                let logo = document.querySelector(".logo img");
+        
+                if (window.scrollY > 50) {
+                    header.classList.add("small");
+                    logo.style.width = "50px"; // Reduzindo o tamanho do logo
+                } else {
+                    header.classList.remove("small");
+                    logo.style.width = "90px"; // Tamanho original do logo
+                }
+            });
+        </script>
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="#"><img src="imgIconQuanta/4.png.png" alt=""></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#identificacao" class="nav-link">Problematica</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link"> Sobre nós</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#identificacao" class="nav-link">Problematica</a></li>
+                <li class="nav-item"><a href="#" class="nav-link"> Sobre nós</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <section id="inicio">
+            <img id="img1" src="imgIconQuanta/membrosFLL" alt="membros Quanta">
+        </section>
+        
+    </main>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
