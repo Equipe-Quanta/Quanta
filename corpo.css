@@ -30,3 +30,19 @@ main {
     height: auto;
 
 }
+
+.sessoes {
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.subtitulo{
+text-align: center;
+width: 100%;
+}
+
+.sessoes h2{
+    margin: 20px;
+} 
