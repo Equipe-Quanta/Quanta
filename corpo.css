@@ -48,10 +48,11 @@ main {
 
 
 .sessoes {
+    text-indent: 60px;
     text-align: justify;
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
+    padding: 40px;
 }
 
 .subtitulo{
@@ -65,9 +66,89 @@ width: 100%;
 
 #quemSomos{
    padding-top: 7%;
+  
+}
+
+#quantum{
+    display: flex;
+    margin: 20px;
+    /* align-items: center; */
+    /* margin: 20px 60px; */
+}
+
+/* #quantum img{
+    transition:1s;
+    width: 20%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.384);
+    margin: 20px;
+    z-index: 10;   
+    animation: troca-imagem 4s infinite steps(1);
+}
+ */
+
+/* 
+#quantum img {
+    position: relative;
+    width: 20%;
+    margin: 10px 20px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.384);
+    transition: 2s;
+}
+
+.img1 {
+    opacity: 1;
+    animation: fadeInOut 2s infinite alternate;
+}
+
+.img2 {
+    opacity: 0;
+    animation: fadeInOut 2s infinite alternate-reverse;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+} */
+
+
+#trocaImg {
+    position: relative;
+    width: 600px; /* Ajuste conforme necessário */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px
+}
+
+#trocaImg img {
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.281);
+    transition: opacity 1s ease-in-out;
+}
+
+.img1 {
+    opacity: 1;
+    animation: fadeInOut 4s infinite alternate;
+}
+
+.img2 {
+    opacity: 0;
+    animation: fadeInOut 4s infinite alternate-reverse;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
 }
 
 #projeto{
     padding-top: 7%;
-
 }
