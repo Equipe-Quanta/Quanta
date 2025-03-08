@@ -14,20 +14,19 @@ header.small {
 header.small .nav-bar {
     padding: 0.2rem 3rem;
 }
-header{
-    background-color: #101841f5;
-    box-shadow: 2px 7px 10px #16033fc0;
-    width: 100%;
-    position: fixed;
-}
+
 
 .nav-bar {
+    width: 100%;
+    background-color: #101841f5;
+    box-shadow: 2px 7px 10px #16033fc0;
+    position: fixed;
     transition: all 0.3s ease;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 5rem;
-    z-index: 2;
+    z-index: 1000;
 }
 
   .nav-bar::before {
@@ -101,9 +100,9 @@ header{
 }
 
 @media screen and (max-width: 730px) {
-    header{
+    /* header{
         position: relative;
-    }
+    } */
     .nav-bar {
         padding: 1.5rem 4rem;
     }
