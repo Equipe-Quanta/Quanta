@@ -41,12 +41,9 @@ p {
     position: relative;
     width: 100%;
     z-index: -1;
- 
- 
 }
 
 .img-container img {
-    display: block;
     width: 100%;
     height: auto;
     border-radius: 30px;
@@ -135,7 +132,7 @@ p {
 
 #parceiros{
     border-radius: 30px;
-    background-color: rgba(127, 255, 212, 0.37);
+    background-image: linear-gradient(to right bottom, rgba(187, 16, 16, 0.507)20%, #0509418f 80%);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -144,13 +141,13 @@ p {
 }
 
 #tempSubmerged {
-    margin: 20px;
+
     background-image: url(../img/logo-background/sesi_robotica_2024_kv_fll.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-radius: 20px 20px 0 0;
+    border-radius: 30px;
 }
 
 .sessoesTemp {
