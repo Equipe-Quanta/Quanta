@@ -10,7 +10,7 @@
 }
 
 body {
-    background-image: url(imgIconQuanta/bannerRandom.png);
+    background-image: url(../img/logo-background/bannerRandom.png);
     text-align: justify;
     display: flex;
     flex-wrap: wrap;
@@ -23,6 +23,11 @@ main {
     flex-wrap: wrap;
     align-items: center;
     flex: 1 1 100vw;
+}
+
+h3, h2 {
+    padding: 0;
+    margin: 20px 0;
 }
 
 .img-container {
@@ -61,13 +66,13 @@ main {
 }
 
 .subtitulo {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 100%;
 }
 
-.sessoes h2 {
-    margin: 20px;
-}
 
 #quemSomos {
     padding-top: 7%;
@@ -92,11 +97,13 @@ main {
 
 }
 #quantum img {
-    margin-right: 20px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.281);
+}
+.fotos {
+    margin: auto 30px;
     width: 30%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.281);
 }
 
 
