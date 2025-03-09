@@ -15,10 +15,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex: 1 1 100vw;
+ 
 }
 
 main {
-    background-color: rgba(251, 251, 251, 0.719);
     font-size: 18px;
     display: flex;
     flex-wrap: wrap;
@@ -40,6 +40,7 @@ p {
 .img-container {
     position: relative;
     width: 100%;
+    height: auto;
     z-index: -1;
 }
 
@@ -47,10 +48,9 @@ p {
     width: 100%;
     height: auto;
     border-radius: 30px;
-
 }
 
-.img-container::after {
+.img-container::before {
     content: "";
     position: absolute;
     top: 0;
@@ -59,9 +59,8 @@ p {
     height: 100%;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, #fbfbfb4d 80%);
     pointer-events: none;
-   
+    z-index: 1000;
 }
-
 
 .sessoes {
     text-indent: 60px;
@@ -72,8 +71,11 @@ p {
     margin: 20px;
 }
 
+/*=========== 1ª Sessao "quemSomos"============== */
+
 #quemSomos {
- margin-top: 20px;
+    background-color: rgba(251, 251, 251, 0.719);
+    margin-top: 20px;
     position: relative;
     border-radius: 40px;
     overflow: hidden;
@@ -91,7 +93,6 @@ p {
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -1;
-
 }
 
 #imgQuanta {
@@ -100,19 +101,16 @@ p {
     align-items: center;
     justify-content: center;
 }
-
 #imgQuanta img {
     width: 20%;
     height: auto;
 }
-
 #quantum {
     display: flex;
     align-items: center;
     justify-content: center; 
 
 }
-
 #membros {
     display: flex;
     flex-wrap: wrap;
@@ -127,46 +125,6 @@ p {
     width: 400px;
     height: auto;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.281);
-   
-}
-
-#parceiros{
-    border-radius: 30px;
-    background-image: linear-gradient(to right bottom, rgba(187, 16, 16, 0.507)20%, #0509418f 80%);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    
-}
-
-#tempSubmerged {
-
-    background-image: url(../img/logo-background/sesi_robotica_2024_kv_fll.png);
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    border-radius: 30px;
-}
-
-.sessoesTemp {
-    background-color: rgba(251, 251, 251, 0.808);
-    text-indent: 60px;
-    text-align: justify;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 50px;
-    padding: 20px;
-    border-radius: 20px 20px 0 20px;
-}
-
-.subtitulo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
 }
 
 #espacoPremiacao {
@@ -198,14 +156,50 @@ p {
     height: auto;
     border-radius: 10px;
 }
-
-/* Ajusta a imagem do troféu para manter um bom alinhamento */
 .fotosPremiacao:last-child {
     max-height: 300px;
-    /* Ajuste conforme necessário */
     object-fit: cover;
-    /* Evita distorção */
 }
+/*=========== 2ª Sessao "Parceiros"============== */
+#parceiros{
+    border-radius: 30px;
+    background-color: rgba(0, 16, 198, 0.319);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/*=========== 3ª Sessao(article) "Temporada Submerged"============== */
+#tempSubmerged {
+    background-image: url(../img/logo-background/sesi_robotica_2024_kv_fll.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+}
+
+/*=========== 4ª Sessao "Sessoes da temporada"============== */
+.sessoesTemp {
+    background-color: rgba(251, 251, 251, 0.808);
+    text-indent: 60px;
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 20px 20px 0 20px;
+}
+
+.subtitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 
 .fotos {
     margin: auto 30px;
@@ -218,6 +212,42 @@ p {
     padding-top: 7%;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #6d6d6df5;
+    color: white;
+    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+    width: 100%; 
+    position: relative;
+    box-sizing: border-box; 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+#iconInsta {
+    border-radius: 15px;
+    transition: 0.5s;
+}
+#iconInsta:hover{
+    transition: 0.5s;
+    transform: scale(1.2);
+}
+
+/*=========== RESPONSIVIDADE ============== */
 @media screen and (max-width: 730px) {
     .sessoes {
         font-size: 20px;
@@ -236,3 +266,4 @@ p {
         width: 90%;
     }
 }
+
