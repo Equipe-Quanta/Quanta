@@ -15,42 +15,51 @@
             window.addEventListener("scroll", function () {
                 let header = document.querySelector("header");
                 let logo = document.querySelector(".logo img");
+                let navBar = document.querySelector(".nav-bar");
+
+                // Se estiver em modo mobile, não executa nada
+                if (window.innerWidth <= 768) return;
 
                 if (window.scrollY > 50) {
                     header.classList.add("small");
-                    logo.style.width = "50px"; // Reduzindo o tamanho do logo
+                    logo.style.width = "50px";
+                    navBar.style.height = "60px";
                 } else {
                     header.classList.remove("small");
-                    logo.style.width = "90px"; // Tamanho original do logo
+                    logo.style.width = "90px";
+                    navBar.style.height = "80px";
+                }
+
+                // Se o menu estiver expandido, ajusta a altura conforme a rolagem
+                if (navBar.classList.contains("expanded")) {
+                    navBar.style.height = window.scrollY > 50 ? "220px" : "250px";
                 }
             });
+
         </script>
+
         <nav class="nav-bar">
             <div class="logo">
-                <a href="#"><img src="assets/img/logo-background/4.png.png" alt=""></a>
+                <a href="#"><img src="assets/img/logo-background/4.png.png" alt="logo"></a>
             </div>
             <div class="nav-list">
                 <ul>
                     <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
                     <li class="nav-item"><a href="#quemSomos" class="nav-link">Quem somos?</a></li>
                     <li class="nav-item"><a href="#projeto" class="nav-link">Projeto Pesquisa</a></li>
-
                 </ul>
             </div>
             <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="assets/img/menu/menu_white_36dp.svg"
-                        alt=""></button>
+                <button onclick="menuShow()">
+                    <img class="icon" src="assets/img/menu/menu_white_36dp.svg" alt="menuShow">
+                </button>
             </div>
+
+
         </nav>
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
-                <li class="nav-item"><a href="#quemSomos" class="nav-link">Sobre nós</a></li>
-                <li class="nav-item"><a href="#projeto" class="nav-link">Problematica</a></li>
-            </ul>
-        </div>
+     
     </header>
-    
+
     <div class="img-container">
         <img src="assets/img/equipe/membrosFLL" alt="membros Quanta">
     </div>
@@ -85,19 +94,20 @@
                     para
                     nós.</p>
             </div>
-                 <div id="espacoPremiacao">
-                    <div id="separador">
-                        <img id="bob" src="assets/img/logo-background/BobEsponja.gif" alt="BobEsponja">
+            <div id="espacoPremiacao">
+                <div id="separador">
+                    <img id="bob" src="assets/img/logo-background/BobEsponja.gif" alt="BobEsponja">
 
-                        <img class="fotosPremiacao" src="assets/img/equipe/premiacao.jpeg" alt="premiação">
-                    </div>
-                    <div id="separador">
-                        <img class="fotosPremiacao" id="LulaMolusco" src="assets/img/logo-background/LulaMolusco.gif" alt="LulaMolusco">
-                        
-                    </div>
-                
+                    <img class="fotosPremiacao" src="assets/img/equipe/premiacao.jpeg" alt="premiação">
+                </div>
+                <div id="separador">
+                    <img class="fotosPremiacao" id="LulaMolusco" src="assets/img/logo-background/LulaMolusco.gif"
+                        alt="LulaMolusco">
+
+                </div>
+
                 <img class="fotosPremiacao" src="assets/img/logo-background/trofeu.jpeg" alt="trofeu">
-               
+
             </div>
 
             <p>Em fevereiro desse ano, competimos pela primeira vez no Torneio Regional SESI de Robótica com a temporada
