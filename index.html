@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EquipeQuanta</title>
-    <link rel="stylesheet" href="cabecalho.css">
-    <link rel="stylesheet" href="corpo.css">
-    <link rel="shortcut icon" href="imgIconQuanta/atomo.png" type="image/x-icon">
+    <title>Equipe Quanta</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/logo-background/atomo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -28,18 +27,19 @@
         </script>
         <nav class="nav-bar">
             <div class="logo">
-                <a href="#"><img src="imgIconQuanta/4.png.png" alt=""></a>
+                <a href="#"><img src="assets/img/logo-background/4.png.png" alt=""></a>
             </div>
             <div class="nav-list">
                 <ul>
                     <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
-                    <li class="nav-item"><a href="#quemSomos" class="nav-link">Quem somos?
+                    <li class="nav-item"><a href="#quemSomos" class="nav-link">Quem somos?</a></li>
                     <li class="nav-item"><a href="#projeto" class="nav-link">Projeto Pesquisa</a></li>
-                        </a></li>
+
                 </ul>
             </div>
             <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="assets/img/menu_white_36dp.svg" alt=""></button>
+                <button onclick="menuShow()"><img class="icon" src="assets/img/menu/menu_white_36dp.svg"
+                        alt=""></button>
             </div>
         </nav>
         <div class="mobile-menu">
@@ -53,18 +53,15 @@
 
     <main>
         <div class="img-container">
-
-            <img id="img1" src="imgIconQuanta/membrosFLL" alt="membros Quanta">
+            <img src="assets/img/equipe/membrosFLL" alt="membros Quanta">
         </div>
 
         <section class="sessoes" id="quemSomos">
-<!--             
-            <div id="trocaImg">
-                <img class="img1" src="imgIconQuanta/quantum-image-from-rawpixel-id-744458.jpg" alt="Imagem 1">
-                <img class="img2" src="imgIconQuanta/5.png" alt="Imagem 2">
-            </div> -->
+            <div id="embacado">
+
+            </div>
             <div id="imgQuanta">
-                <img src="imgIconQuanta/5.png" alt="">
+                <img src="assets/img/logo-background/cargador de átomos.gif" alt="">
             </div>
             <p>Olá! Somos a Equipe Quanta, uma equipe de garagem de São Luís-MA, que faz parte do programa FIRST® LEGO®;
                 League Challenge (FLLC). Nossa equipe foi criada no dia 16/10/2024 e é formada por 6 competidores que
@@ -72,7 +69,7 @@
                 de competição.
             </p>
             <div id="quantum">
-                <img src="imgIconQuanta/membros.png" alt="">
+                <img class="fotos" src="assets/img/equipe/2.png" alt="membros">
                 <p>O nosso nome significa o plural de quantum (quanta), que é a menor quantidade de qualquer grandeza
                     física
                     envolvida numa interação. Esse nome surgiu em no interior do Maranhão, em 2011, com a primeira
@@ -86,19 +83,39 @@
                     conseguimos identificar o diferencial do coletivo, por isso, “Quanta” tem grande representatividade
                     para
                     nós.</p>
-                   
+
+
             </div>
+                 <div id="espacoPremiacao">
+                    <div id="separador">
+                        <img id="bob" src="assets/img/logo-background/BobEsponja.gif" alt="BobEsponja">
+
+                        <img class="fotosPremiacao" src="assets/img/equipe/premiacao.jpeg" alt="premiação">
+                    </div>
+                    <div id="separador">
+                        <img class="fotosPremiacao" id="LulaMolusco" src="assets/img/logo-background/LulaMolusco.gif" alt="LulaMolusco">
+                        
+                    </div>
+                
+                <img class="fotosPremiacao" src="assets/img/logo-background/trofeu.jpeg" alt="trofeu">
+               
+            </div>
+
             <p>Em fevereiro desse ano, competimos pela primeira vez no Torneio Regional SESI de Robótica com a temporada
                 Submerged, onde nos destacamos no trabalho em equipe e na diversão, conquistando assim o 1º lugar na
                 categoria “Core Values”. Agora, estamos nos preparando para a etapa Nacional que ocorrerá em Brasília
                 neste mês de março.</p>
         </section>
         <section class="sessoes" id="parceiros">
+
             <div class="subtitulo">
                 <h2>PARCEIROS</h2>
-                <h3>O que a FIRST® LEGO®; League Challenge?
+                <img class="fotos" id="logoFll" src="assets/img/logo-background/FLL_Challenge_Logo_v2.svg.png"
+                    alt="FLL_Challenge_Logo_v2">
+                <h3>O que a FIRST® LEGO®; League Challenge?</h3>
+
             </div>
-            </h3>
+
             <p> A FIRST® é uma organização estadunidense sem fins lucrativos. Ela foi fundada em 1989 na parceria entre
                 o inventor e empreendedor Dean Kamen e o engenheiro Woodie Flowers, a ONG foi criada com o objetivo
                 principal de inspirar os jovens dos Estados Unidos a se tornarem líderes na ciência e na tecnologia. Mas
@@ -106,6 +123,7 @@
                 voluntários de todo o mundo. Essa organização possui 4 categorias, sendo: First Tech Challenge (FTC),
                 First Robotics Competition (FRC), F1 in Schools e First Lego League Challenge (FLLC).
             </p>
+
             <p>A categoria FLLC é o programa que desafia estudantes de 9 a 15 anos a buscarem soluções para problemas da
                 sociedade moderna a partir de um mergulho no conceito STEAM (Ciência, Tecnologia, Engenharia, Artes e
                 Matemática). Os jovens que desta participam, precisam trabalhar em sintonia tendo como base Valores
@@ -124,85 +142,108 @@
                 mais importante do que vencer e que as equipes podem se ajudar mesmo estando em uma competição.
             </p>
         </section>
-        <section class="sessoes" id="tempSubmerged">
-            <div class="subtitulo">
-                <h2>TEMPORADA SUBMERGED</h2>
-            </div>
-            <p>Atualmente estamos vivenciando a SUBMERGED℠ (temporada 2024/25). Durante ela, as equipes da FIRST LEGO
-                League usaram o pensamento criativo e a tecnologia LEGO® para explorar as camadas do oceano e trazer
-                seus aprendizados e ideias à tona enquanto "navegam" em direção ao futuro. A temporada propôs o seguinte
-                desafio para as equipes: <strong>Mergulhar em um problema enfrentado por pessoas que exploram os
-                    oceanos</strong>.
-            </p>
-        </section>
 
-        <section class="sessoes" id="projeto">
-            <div class="subtitulo">
-                <h2>NOSSO PROJETO</h2>
-            </div>
+        <article id="tempSubmerged">
+            <section class="sessoesTemp">
+                <div class="subtitulo">
+                    <h2>TEMPORADA SUBMERGED</h2>
+                </div>
+                <p>Atualmente estamos vivenciando a SUBMERGED℠ (temporada 2024/25). Durante ela, as equipes da FIRST
+                    LEGO
+                    League usaram o pensamento criativo e a tecnologia LEGO® para explorar as camadas do oceano e trazer
+                    seus aprendizados e ideias à tona enquanto "navegam" em direção ao futuro. A temporada propôs o
+                    seguinte
+                    desafio para as equipes: <strong>Mergulhar em um problema enfrentado por pessoas que exploram os
+                        oceanos</strong>.
+                </p>
+            </section>
 
-            <p>Com base no desafio da temporada Submerged, desenvolvemos o nosso Projeto de Inovação. Vamos descobrir
-                como foi?</p>
-            <p>Iniciamos a pesquisa buscando por profissionais que exploram os oceanos encontrados em São Luís do
-                Maranhão, cidade que habitamos, na primeira etapa pesquisa geral identificamos: oceanógrafos, biólogos
-                marinhos, pescadores e marinheiros.</p>
-            <p>A partir de uma análise criteriosa, delimitamos o estudo em uma profissão, assim conseguimos ampliar
-                nosso estudo, identificar um problema e solucionar de acordo com o objetivo da equipe.</p>
-            <p>A profissão escolhida pela equipe foram os oceanógrafos, aqueles que estudam os oceanos, mares, rios e
-                lagos, e os seres vivos que neles habitam. Visitamos a exposição Internacional Sawfish Day Brazil,
-                organizada pelo grupo de estudos de Elasmobrânquios Amazônico da UFMA (Universidade Federal do
-                Maranhão), que dá ênfase na espécie Espadarte Pristis Pristis, ou Peixe-Serra, que posteriormente se
-                tornou nosso foco de pesquisa. Lá conhecemos o oceanógrafo do grupo Jorge, que deu ênfase no Espadarte e
-                a dificuldade de mapeá-la para conseguir informações precisas por ser uma espécie migratória.
-            </p>
-            <p>A oceanógrafa Patrícia Martins destacou problemas gerais da profissão, que engloba: grandes embarcações,
-                comércio ilegal e desmatamento afeta a espécie. Juntando seus relatos aos do ecologista Márcio, que
-                apontou que tudo isso contribui para o desequilíbrio marinho, de fato causa a diminuição do Peixe-Serra.
-            </p>
-            <p>Assim, conseguimos concluir um desafio para oceanografia: O mapeamento de raias migratórias.</p>
-            <p>Para solucioná-lo, a nossa equipe pensou em um dispositivo para o mapeamento de raias migratórias. O
-                protótipo é feito de arduino, que funciona como cérebro do dispositivo: armazenando dados, um módulo de
-                comunicação, podendo também processar os dados de sensores e controlando suas funções; possuindo dois
-                sensores, o primeiro para identificar uma determinada espécie com base no seu porte físico e
-                especificidade de tamanho. Avaliado por Paulo Ribeiro, professor de BICT, que apontou melhorias, tais
-                como: um dispositivo FIXO e análise dos dados poderiam ser por duas linguagens de programação sendo
-                Python e C++.
-            </p>
-            <p>Os sensores serão instalados em pontos estratégicos da rota da espécie migratória, quando o animal passar
-                pelo sensor ele vai enviar um sinal para o arduíno, o arduíno registra a data e a hora da detecção dados
-                coletados podem ser analisados utilizando softwares de estatísticas e visualização de dados, permitindo
-                a identificação dos padrões nas datas migratórias (época do ano, duração da migração) e fatores
-                ambientais (temperatura da água e condições climáticas).
-            </p>
-            <p>Apresentamos a nossa solução no LabAqua - Laboratório de oceanografia da Universidade Federal do
-                Maranhão- , compartilhamos nosso projeto com a Rafaela Maria, oceanógrafa. Ela destacou a importância da
-                pesquisa sobre o projeto e o Espadarte Pristis Pristis.</p>
-            <p>Junto a Rafaela, Keyton Coelho, também oceanógrafo, destacou os mesmos detalhes que Rafaela, porém,
-                chamou a nossa atenção sobre a falta de ações sobre a educação ambiental e da conscientização da
-                importância do Espadarte em nossa sociedade.</p>
-            <p>Com esses feedbacks, concluímos mais uma etapa: compartilhar e alertar pessoas sobre a conservação de uma
-                espécie para o ecossistema marinho. Chamamos atenção para esse estudo e sobre a espécie, o estudo que
-                nos levou a entender e compartilhar a nossa pesquisa.</p>
-        </section>
-        <section class="sessoes" id="compartilhamento">
-            <div class="subtitulo">
-                <h2>COMPARTILHANDO NOSSO PROJETO</h2>
-            </div>
-            <p>Nossas ações foram organizadas com base em educação ambiental em três eixos: utilizamos nossas redes
-                sociais e obtivemos um alcance de 1.620 pessoas, ação presencial com 4 grupos e panfletagem para 200
-                pessoas. </p>
-            <img src="" alt="dados">
-            <p>Realizamos um questionário com os universitários do curso de biologia da UFMA, UEMA e Instituto Federal.
-            </p>
-            <img src="" alt="quantidades e datas">
-            <p>Compartilhamos com os jovens aprendizes da Empresa RENAPSI, Estudantes do Ensino Médio, técnico e
-                superior do IFMA. </p>
-            <img src="" alt="IFMA e RENAPSI">
-            <p>Compartilhamos nosso projeto com as equipes Nautilus, Desbravadores do Conhecimento, Lion Team, Top Gun,
-                Fídia e Tucuna. Fizemos uma troca de conhecimentos, o que tornou tudo ainda mais divertido!
-            </p>
-            <img src="" alt="">
-        </section>
+            <section class="sessoesTemp" id="projeto">
+                <div class="subtitulo">
+                    <h2>NOSSO PROJETO</h2>
+                </div>
+
+                <p>Com base no desafio da temporada Submerged, desenvolvemos o nosso Projeto de Inovação. Vamos
+                    descobrir
+                    como foi?</p>
+                <p>Iniciamos a pesquisa buscando por profissionais que exploram os oceanos encontrados em São Luís do
+                    Maranhão, cidade que habitamos, na primeira etapa pesquisa geral identificamos: oceanógrafos,
+                    biólogos
+                    marinhos, pescadores e marinheiros.</p>
+                <p>A partir de uma análise criteriosa, delimitamos o estudo em uma profissão, assim conseguimos ampliar
+                    nosso estudo, identificar um problema e solucionar de acordo com o objetivo da equipe.</p>
+                <p>A profissão escolhida pela equipe foram os oceanógrafos, aqueles que estudam os oceanos, mares, rios
+                    e
+                    lagos, e os seres vivos que neles habitam. Visitamos a exposição Internacional Sawfish Day Brazil,
+                    organizada pelo grupo de estudos de Elasmobrânquios Amazônico da UFMA (Universidade Federal do
+                    Maranhão), que dá ênfase na espécie Espadarte Pristis Pristis, ou Peixe-Serra, que posteriormente se
+                    tornou nosso foco de pesquisa. Lá conhecemos o oceanógrafo do grupo Jorge, que deu ênfase no
+                    Espadarte e
+                    a dificuldade de mapeá-la para conseguir informações precisas por ser uma espécie migratória.
+                </p>
+                <p>A oceanógrafa Patrícia Martins destacou problemas gerais da profissão, que engloba: grandes
+                    embarcações,
+                    comércio ilegal e desmatamento afeta a espécie. Juntando seus relatos aos do ecologista Márcio, que
+                    apontou que tudo isso contribui para o desequilíbrio marinho, de fato causa a diminuição do
+                    Peixe-Serra.
+                </p>
+                <p>Assim, conseguimos concluir um desafio para oceanografia: O mapeamento de raias migratórias.</p>
+                <p>Para solucioná-lo, a nossa equipe pensou em um dispositivo para o mapeamento de raias migratórias. O
+                    protótipo é feito de arduino, que funciona como cérebro do dispositivo: armazenando dados, um módulo
+                    de
+                    comunicação, podendo também processar os dados de sensores e controlando suas funções; possuindo
+                    dois
+                    sensores, o primeiro para identificar uma determinada espécie com base no seu porte físico e
+                    especificidade de tamanho. Avaliado por Paulo Ribeiro, professor de BICT, que apontou melhorias,
+                    tais
+                    como: um dispositivo FIXO e análise dos dados poderiam ser por duas linguagens de programação sendo
+                    Python e C++.
+                </p>
+                <p>Os sensores serão instalados em pontos estratégicos da rota da espécie migratória, quando o animal
+                    passar
+                    pelo sensor ele vai enviar um sinal para o arduíno, o arduíno registra a data e a hora da detecção
+                    dados
+                    coletados podem ser analisados utilizando softwares de estatísticas e visualização de dados,
+                    permitindo
+                    a identificação dos padrões nas datas migratórias (época do ano, duração da migração) e fatores
+                    ambientais (temperatura da água e condições climáticas).
+                </p>
+                <p>Apresentamos a nossa solução no LabAqua - Laboratório de oceanografia da Universidade Federal do
+                    Maranhão- , compartilhamos nosso projeto com a Rafaela Maria, oceanógrafa. Ela destacou a
+                    importância da
+                    pesquisa sobre o projeto e o Espadarte Pristis Pristis.</p>
+                <p>Junto a Rafaela, Keyton Coelho, também oceanógrafo, destacou os mesmos detalhes que Rafaela, porém,
+                    chamou a nossa atenção sobre a falta de ações sobre a educação ambiental e da conscientização da
+                    importância do Espadarte em nossa sociedade.</p>
+                <p>Com esses feedbacks, concluímos mais uma etapa: compartilhar e alertar pessoas sobre a conservação de
+                    uma
+                    espécie para o ecossistema marinho. Chamamos atenção para esse estudo e sobre a espécie, o estudo
+                    que
+                    nos levou a entender e compartilhar a nossa pesquisa.</p>
+            </section>
+            <section class="sessoesTemp" id="compartilhamento">
+                <div class="subtitulo">
+                    <h2>COMPARTILHANDO NOSSO PROJETO</h2>
+                </div>
+                <p>Nossas ações foram organizadas com base em educação ambiental em três eixos: utilizamos nossas redes
+                    sociais e obtivemos um alcance de 1.620 pessoas, ação presencial com 4 grupos e panfletagem para 200
+                    pessoas. </p>
+                <img src="" alt="dados">
+                <p>Realizamos um questionário com os universitários do curso de biologia da UFMA, UEMA e Instituto
+                    Federal.
+                </p>
+                <img src="" alt="quantidades e datas">
+                <p>Compartilhamos com os jovens aprendizes da Empresa RENAPSI, Estudantes do Ensino Médio, técnico e
+                    superior do IFMA. </p>
+                <img src="" alt="IFMA e RENAPSI">
+                <p>Compartilhamos nosso projeto com as equipes Nautilus, Desbravadores do Conhecimento, Lion Team, Top
+                    Gun,
+                    Fídia e Tucuna. Fizemos uma troca de conhecimentos, o que tornou tudo ainda mais divertido!
+                </p>
+                <img src="" alt="">
+            </section>
+        </article>
+
     </main>
     <script src="assets/js/script.js"></script>
 </body>

@@ -1,32 +1,46 @@
-header{
-    background-color: #101841;
-    box-shadow: 2px 7px 10px #16033f;
-    width: 100%;
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    box-sizing: border-box
+}
+header.small {
+    height: 60px;
+    transition: all 1s ease;
+}
+header.small .nav-bar {
+    padding: 0.2rem 3rem;
 }
 
+
 .nav-bar {
-    position: relative;
+    width: 100%;
+    background-color: #101841f5;
+    box-shadow: 2px 7px 10px #16033fc0;
+    position: fixed;
+    transition: all 0.3s ease;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 5rem;
-    z-index: 2;
-  
+    z-index: 1000;
 }
 
-.nav-bar::before {
+  .nav-bar::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(../../imgIconQuanta/bannerRandom.png);
+    background-image: url(../img/logo-background/bannerRandom.png);
     background-position: center;
-    filter: blur(2px); 
+    filter: blur(1.5px); 
     z-index: -2;
-}
+}  
 
 .logo {
     display: flex;
@@ -34,7 +48,7 @@ header{
 }
 
 .logo img{
-    width: 90px;
+    width: 1.5em;
     padding: 0;
     margin: 0;
 }
@@ -86,6 +100,9 @@ header{
 }
 
 @media screen and (max-width: 730px) {
+    header{
+        position: relative;
+    } 
     .nav-bar {
         padding: 1.5rem 4rem;
     }

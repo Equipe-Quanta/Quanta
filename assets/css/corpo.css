@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    box-sizing: border-box
+}
+
+body {
+    background-image: url(../img/logo-background/bannerRandom.png);
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 100vw;
+}
+
+main {
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 1 1 100vw;
+}
+
+h3, h2 {
+    padding: 0;
+    margin: 20px 0;
+}
+p {
+    line-height: 1.5; 
+    margin-bottom: 20px; 
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+.img-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+
+.img-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 20%, #FBFBFB 80%);
+    pointer-events: none;
+    /* Garante que o efeito não interfira na imagem */
+}
+
+
+.sessoes {
+    background-color: rgba(251, 251, 251, 0.808);
+    text-indent: 60px;
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+}
+
+#quemSomos {
+    position: relative; /* Para que o ::before se posicione corretamente */
+    border-radius: 40px;
+    overflow: hidden; /* Evita que o ::before ultrapasse o border-radius */
+}
+
+#quemSomos::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/logo-background/colaboration");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px); /* Ajuste o nível de desfoque */
+    z-index: -1; /* Joga o fundo para trás */
+}
+
+
+#imgQuanta {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imgQuanta img {
+    width: 20%;
+    height: auto;
+}
+
+#quantum {
+    display: flex;
+    margin: 20px;
+
+}
+#quantum img {
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.281);
+}
+
+#tempSubmerged{
+    margin-top: 20px;
+    background-image: url(../img/logo-background/sesi_robotica_2024_kv_fll.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px 20px 0 0;
+}
+.sessoesTemp{
+    background-color: rgba(251, 251, 251, 0.808);
+    text-indent: 60px;
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 20px 20px 0 20px;
+}
+.subtitulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#espacoPremiacao {
+    display: flex; /* Organiza os elementos lado a lado */
+    justify-content: center; /* Centraliza os itens */
+    gap: 10px; /* Adiciona espaçamento entre as imagens */
+    flex-wrap: wrap; /* Permite que as imagens se ajustem em telas menores */
+}
+
+#esp{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#separador {
+    display: flex;
+    flex-direction: column; /* Deixa as imagens do Bob e da premiação empilhadas */
+    align-items: center; /* Alinha ao centro */
+    gap: 10px;
+}
+#LulaMolusco{
+    margin-top: 50px;
+}
+#bob {
+    width: 150px; /* Define um tamanho fixo para o GIF */
+}
+
+.fotosPremiacao {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o contêiner */
+    height: auto; /* Mantém a proporção */
+    border-radius: 10px; /* Bordas arredondadas para um efeito mais bonito */
+}
+
+/* Ajusta a imagem do troféu para manter um bom alinhamento */
+.fotosPremiacao:last-child {
+    max-height: 300px; /* Ajuste conforme necessário */
+    object-fit: cover; /* Evita distorção */
+}
+
+
+
+
+
+
+.fotos {
+    margin: auto 30px;
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#projeto {
+    padding-top: 7%;
+}
