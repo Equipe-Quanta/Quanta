@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
 
 * {
+
     padding: 0;
     margin: 0;
     font-family: 'Inter', sans-serif;
@@ -15,7 +16,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex: 1 1 100vw;
- 
+
 }
 
 main {
@@ -30,6 +31,7 @@ h3,
 h2 {
     padding: 0;
     margin: 20px 0;
+
 }
 
 p {
@@ -101,16 +103,19 @@ p {
     align-items: center;
     justify-content: center;
 }
+
 #imgQuanta img {
     width: 20%;
     height: auto;
 }
+
 #quantum {
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 
 }
+
 #membros {
     display: flex;
     flex-wrap: wrap;
@@ -129,6 +134,7 @@ p {
 
 #espacoPremiacao {
     display: flex;
+    flex-direction: column;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -143,8 +149,37 @@ p {
     gap: 10px;
 }
 
-#LulaMolusco {
-    margin-top: 50px;
+#imgSeparador {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imgSeparador img {
+    width: 90%;
+    height: auto;
+    border-radius: 20px;
+    margin: 0 10px;
+}
+#LulaMolusco{   
+    width: 30%;
+    height: auto;
+    padding: 20px;
+}
+
+#lulaEtrofeu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 20px 20px;
+    
+}
+#trofeu{
+    width: 20%;
+    border-radius: 50px ;
 }
 
 #bob {
@@ -156,19 +191,24 @@ p {
     height: auto;
     border-radius: 10px;
 }
+
 .fotosPremiacao:last-child {
     max-height: 300px;
     object-fit: cover;
 }
+
 /*=========== 2ª Sessao "Parceiros"============== */
-#parceiros{
+#parceiros {
     border-radius: 30px;
-    background-color: rgba(0, 16, 198, 0.319);
+    background-color: rgba(16, 27, 148, 0.466);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+    z-index: 10;
+    backdrop-filter: blur(3px);
 }
+
 
 /*=========== 3ª Sessao(article) "Temporada Submerged"============== */
 #tempSubmerged {
@@ -220,9 +260,9 @@ footer {
     margin-top: 20px;
     text-align: center;
     padding: 20px;
-    width: 100%; 
+    width: 100%;
     position: relative;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .footer-content {
@@ -242,28 +282,86 @@ footer {
     border-radius: 15px;
     transition: 0.5s;
 }
-#iconInsta:hover{
+
+#iconInsta:hover {
     transition: 0.5s;
     transform: scale(1.2);
 }
 
+
+#paragrafoPatricia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#p1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#paragrafoPatricia #imgPatricia{
+    width: 400px;
+    height: auto;
+    border-radius: 50%;
+}
 /*=========== RESPONSIVIDADE ============== */
 @media screen and (max-width: 730px) {
     .sessoes {
-        font-size: 20px;
+        font-size: 18px;
         padding: 0 20px;
     }
-    .sessoesTemp{
-        font-size: 20px;
-        padding: 0 20px;
+
+    .sessoesTemp {
+        font-size: 18px;
+        padding: 0 15px;
     }
+    #quemSomos::before {
+        background-position: center;
+    }
+
+    #trofeu{
+        width: 30%;
+        margin-bottom: 20px;
+    }
+    #LulaMolusco{   
+        width: 40%;
+        height: auto;
+        padding: 20px;
+    }
+
+    #espaçoPremiacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+    #imgSeparador {
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #imgSeparador img{
+        width: 100%;
+        height: auto;
+        margin: 10px;
+    }
+    #trofeu img{
+        width: 100%;
+        height: auto;
+    }
+
     #quantum {
         flex-direction: column;
         justify-content: center;
         flex-wrap: wrap;
     }
+
     #membros {
         width: 90%;
     }
 }
-
