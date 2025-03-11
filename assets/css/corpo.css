@@ -308,12 +308,12 @@ footer {
 /*=========== RESPONSIVIDADE ============== */
 @media screen and (max-width: 730px) {
     .sessoes {
-        font-size: 18px;
+        font-size: 20px;
         padding: 0 20px;
     }
 
     .sessoesTemp {
-        font-size: 18px;
+        font-size: 20px;
         padding: 0 15px;
     }
     #quemSomos::before {
