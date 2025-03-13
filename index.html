@@ -91,31 +91,34 @@
                 <div id="separador">
                     <img id="bob" src="assets/img/logo-background/BobEsponja.gif" alt="BobEsponja">
 
-                   
+
                 </div>
                 <div id="separador">
                     <div id="imgSeparador">
                         <img class="fotosPremiacao" src="assets/img/equipe/self.jpeg" alt="premiação">
-                        
+
                     </div>
-                        <p>Em fevereiro desse ano, competimos pela primeira vez no Torneio Regional SESI de Robótica com a temporada
-                            Submerged, onde nos destacamos no trabalho em equipe e na diversão, conquistando assim o 1º lugar na
-                            categoria “Core Values”. Agora, estamos nos preparando para a etapa Nacional que ocorrerá em Brasília
-                            neste mês de março.</p>
-                        
-                           
+                    <p>Em fevereiro desse ano, competimos pela primeira vez no Torneio Regional SESI de Robótica com a
+                        temporada
+                        Submerged, onde nos destacamos no trabalho em equipe e na diversão, conquistando assim o 1º
+                        lugar na
+                        categoria “Core Values”. Agora, estamos nos preparando para a etapa Nacional que ocorrerá em
+                        Brasília
+                        neste mês de março.</p>
+
+
                 </div>
-                
+
 
             </div>
             <div id="lulaEtrofeu">
-                <img  id="trofeu" class="fotosPremiacao" src="assets/img/logo-background/trofeu.jpeg" alt="trofeu">
+                <img id="trofeu" class="fotosPremiacao" src="assets/img/logo-background/trofeu.jpeg" alt="trofeu">
                 <img class="fotosPremiacao" id="LulaMolusco" src="assets/img/logo-background/LulaMolusco.gif"
-                alt="LulaMolusco">
-        
+                    alt="LulaMolusco">
+
 
             </div>
-           
+
         </section>
         <section class="sessoes" id="parceiros">
 
@@ -174,24 +177,80 @@
                     <h2>NOSSO PROJETO</h2>
                 </div>
                 <p>Com base no desafio da temporada Submerged, desenvolvemos o projeto de inovação, venha conhecer! </p>
-                <p>Iniciamos a pesquisa buscando por profissionais que exploraram os oceanos encontrados em São Luís do Maranhão, cidade que habitamos, na primeira etapa identificamos: oceanográfos, biólogos marinhos, pescadores e marinheiros. A partir de uma análise e orientação, delimitamos o nosso estudo em uma profissão, dessa forma conseguimos identificar um problema e solucionar de acordo com o objetivo da equipe. A área escolhida foi a oceanografia, os oceanográfos estudam os oceanos, rios, mares e todo o ecossistema marinho.</p>
+                <p>Iniciamos a pesquisa buscando por profissionais que exploraram os oceanos encontrados em São Luís do
+                    Maranhão, cidade que habitamos, na primeira etapa identificamos: oceanográfos, biólogos marinhos,
+                    pescadores e marinheiros. A partir de uma análise e orientação, delimitamos o nosso estudo em uma
+                    profissão, dessa forma conseguimos identificar um problema e solucionar de acordo com o objetivo da
+                    equipe. A área escolhida foi a oceanografia, os oceanográfos estudam os oceanos, rios, mares e todo
+                    o ecossistema marinho.</p>
 
                 <p>A partir de uma análise criteriosa, delimitamos o estudo em uma profissão, assim conseguimos ampliar
                     nosso estudo, identificar um problema e solucionar de acordo com o objetivo da equipe.</p>
-                <p>A profissão escolhida pela equipe foram os oceanógrafos, aqueles que estudam os oceanos, mares, rios
-                    e
-                    lagos, e os seres vivos que neles habitam. Visitamos a exposição Internacional Sawfish Day Brazil,
-                    organizada pelo grupo de estudos de Elasmobrânquios Amazônico da UFMA (Universidade Federal do
-                    Maranhão), que dá ênfase na espécie Espadarte Pristis Pristis, ou Peixe-Serra, que posteriormente se
-                    tornou nosso foco de pesquisa. Lá conhecemos o oceanógrafo do grupo Jorge, que deu ênfase no
-                    Espadarte e
-                    a dificuldade de mapeá-la para conseguir informações precisas por ser uma espécie migratória.
-                </p>
+                <div id="Jorge">
+                    <img id="Imgjorge" src="assets/img/projeto/jorge.jpeg" alt="">
+                    <div class="p1">
+                        <p>A profissão escolhida pela equipe foram os oceanógrafos, aqueles que estudam os oceanos,
+                            mares, rios
+                            e
+                            lagos, e os seres vivos que neles habitam. Visitamos a exposição Internacional Sawfish Day
+                            Brazil,
+                            organizada pelo grupo de estudos de Elasmobrânquios Amazônico da UFMA (Universidade Federal
+                            do
+                            Maranhão), que dá ênfase na espécie Espadarte Pristis Pristis, ou Peixe-Serra, que
+                            posteriormente se
+                            tornou nosso foco de pesquisa. Lá conhecemos o oceanógrafo do grupo Jorge, que deu ênfase no
+                            Espadarte e
+                            a dificuldade de mapeá-la para conseguir informações precisas por ser uma espécie
+                            migratória.
+                        </p>
+                        <div class="carousel">
+                            <div class="carousel-images">
+                                <img src="assets/img/projeto/visitaRefesa.png" alt="Imagem 1">
+                                <img src="assets/img/projeto/visitaRefesa1.png" alt="Imagem 2">
+                                <img src="assets/img/projeto/visitaRefesa2.jpeg" alt="Imagem 3">
+                                <img src="assets/img/projeto/visitaRefesa3.jpeg" alt="Imagem 4">
+                                <img src="assets/img/projeto/visitaRefesa4.jpeg" alt="Imagem 5">
+                                <img src="assets/img/projeto/visitaRefesa5.jpeg" alt="Imagem 6">
+                                <img src="assets/img/projeto/visitaRefesa6.jpeg" alt="Imagem 7">
+                            </div>
+                            <div class="buttons">
+                                <button onclick="prevSlide()">&#10094;</button>
+                                <button onclick="nextSlide()">&#10095;</button>
+                            </div>
+                            <script>
+                                let index = 0;
+                                const images = document.querySelectorAll(".carousel-images img");
+                                const total = images.length;
+                                
+                                function showSlide() {
+                                    const offset = -index * 100;
+                                    document.querySelector(".carousel-images").style.transform = `translateX(${offset}%)`;
+                                }
+                                
+                                function nextSlide() {
+                                    index = (index + 1) % total;
+                                    showSlide();
+                                }
+                                
+                                function prevSlide() {
+                                    index = (index - 1 + total) % total;
+                                    showSlide();
+                                }
+                                
+                                setInterval(nextSlide, 3000); // Altera a imagem a cada 3 segundos
+                            </script>
+                        </div>
+                        
+                    </div>
+
+
+                </div>
                 <div id="paragrafoPatricia">
-                    <div id="p1">
+                    <div class="p1">
                         <p>A oceanógrafa Patrícia Martins destacou problemas gerais da profissão, que engloba: grandes
                             embarcações,
-                            comércio ilegal e desmatamento afeta a espécie. Juntando seus relatos aos do ecologista Márcio, que
+                            comércio ilegal e desmatamento afeta a espécie. Juntando seus relatos aos do ecologista
+                            Márcio, que
                             apontou que tudo isso contribui para o desequilíbrio marinho, de fato causa a diminuição do
                             Peixe-Serra.
                         </p>
@@ -255,17 +314,18 @@
                 <img src="" alt="">
             </section>
         </article>
-
+        <footer>
+            <div class="footer-content">
+                <p>Fique conectado conosco!</p>
+                <a href="https://www.instagram.com/quanta.robotics/" target="_blank">
+                    <img id="iconInsta" src="assets/img/imgFooter/social-instagram-svgrepo-com.svg" alt="Instagram"
+                        class="social-icon">
+                </a>
+            </div>
+        </footer>
     </main>
     <script src="assets/js/script.js"></script>
-    <footer>
-        <div class="footer-content">
-            <p>Fique conectado conosco!</p>
-            <a href="https://www.instagram.com/quanta.robotics/" target="_blank">
-                <img id="iconInsta" src="assets/img/imgFooter/social-instagram-svgrepo-com.svg" alt="Instagram" class="social-icon">
-            </a>
-        </div>
-    </footer>
+
 </body>
 
 
