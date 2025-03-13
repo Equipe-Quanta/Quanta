@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
 
 * {
-
     padding: 0;
     margin: 0;
     font-family: 'Inter', sans-serif;
     scrollbar-width: thin;
     scroll-behavior: smooth;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 body {
@@ -252,6 +251,75 @@ p {
     padding-top: 7%;
 }
 
+#Jorge{
+    display: flex;
+    gap: 1.3em;
+}
+
+
+#paragrafoPatricia{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.p1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.refesa{
+    margin-bottom: 20px;
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
+}
+.carousel {
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-images img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+.buttons button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#Imgjorge{
+    width: 350px;
+    height: max-content;
+    border-radius: 50%;
+}
+
+
+#paragrafoPatricia #imgPatricia{
+    width: 350px;
+    height: auto;
+    border-radius: 50%;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -288,23 +356,6 @@ footer {
     transform: scale(1.2);
 }
 
-
-#paragrafoPatricia{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-#p1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#paragrafoPatricia #imgPatricia{
-    width: 400px;
-    height: auto;
-    border-radius: 50%;
-}
 /*=========== RESPONSIVIDADE ============== */
 @media screen and (max-width: 730px) {
     .sessoes {
@@ -363,5 +414,10 @@ footer {
 
     #membros {
         width: 90%;
+    }
+    #Jorge{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
