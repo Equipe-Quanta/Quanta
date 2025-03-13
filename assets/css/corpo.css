@@ -162,23 +162,25 @@ p {
     border-radius: 20px;
     margin: 0 10px;
 }
-#LulaMolusco{   
+
+#LulaMolusco {
     width: 30%;
     height: auto;
     padding: 20px;
 }
 
-#lulaEtrofeu{
+#lulaEtrofeu {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
     margin: 0 20px 20px;
-    
+
 }
-#trofeu{
+
+#trofeu {
     width: 20%;
-    border-radius: 50px ;
+    border-radius: 50px;
 }
 
 #bob {
@@ -251,29 +253,32 @@ p {
     padding-top: 7%;
 }
 
-#Jorge{
+#Jorge {
     display: flex;
     gap: 1.3em;
 }
 
 
-#paragrafoPatricia{
+#paragrafoPatricia {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
-.p1{
+
+.p1 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.refesa{
+
+.refesa {
     margin-bottom: 20px;
     width: 350px;
     height: auto;
     border-radius: 20px;
 }
+
 .carousel {
     width: 100%;
     max-width: 500px;
@@ -281,16 +286,20 @@ p {
     overflow: hidden;
     position: relative;
 }
+
 .carousel-images {
     display: flex;
     transition: transform 0.5s ease-in-out;
+    margin-bottom: 20px;
 }
+
 .carousel-images img {
     width: 100%;
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
 }
+
 .buttons {
     position: absolute;
     top: 50%;
@@ -299,6 +308,7 @@ p {
     justify-content: space-between;
     transform: translateY(-50%);
 }
+
 .buttons button {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
@@ -307,19 +317,80 @@ p {
     cursor: pointer;
 }
 
-#Imgjorge{
+#Imgjorge {
     width: 350px;
     height: max-content;
     border-radius: 50%;
 }
 
 
-#paragrafoPatricia #imgPatricia{
+#paragrafoPatricia #imgPatricia {
     width: 350px;
     height: auto;
     border-radius: 50%;
 }
 
+.evolution-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.evolution-container img {
+    width: 80%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: 0.6s;
+    margin-bottom: 5px;
+}
+
+.evolution-container img:hover{
+ 
+    transition: 0.6s;
+    transform: scale(1.03);
+    box-shadow: -5px 4px 4px rgba(0, 0, 0, 0.801);
+}
+
+#adaFruit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#adaFruit img{
+    width: 90%;
+    margin: 20px 0;
+    box-shadow: 7px 6px 8px 2px rgba(14, 74, 102, 0.87);
+    border-radius: 10px;
+}
+#paragrafosPristis{
+    border-radius: 20px;
+    padding: 20px;
+}
+#paragrafosPristis p{
+    margin: 0;
+}
+#ultimoParagrafo{
+    margin: 0 10% ;
+}
+#espadarte{
+    display: flex;
+    margin-top: 20px;
+}
+#espadarte img{
+    width: 500px;
+    transition: 0.5s;
+}
+
+#espadarte img:hover{
+    transition: 0.5s;
+    transform: rotate(15deg);
+}
 footer {
     display: flex;
     flex-direction: column;
@@ -367,15 +438,17 @@ footer {
         font-size: 20px;
         padding: 0 15px;
     }
+
     #quemSomos::before {
         background-position: center;
     }
 
-    #trofeu{
+    #trofeu {
         width: 30%;
         margin-bottom: 20px;
     }
-    #LulaMolusco{   
+
+    #LulaMolusco {
         width: 40%;
         height: auto;
         padding: 20px;
@@ -386,8 +459,9 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-       
+
     }
+
     #imgSeparador {
         width: 50%;
         display: flex;
@@ -396,12 +470,13 @@ footer {
         align-items: center;
     }
 
-    #imgSeparador img{
+    #imgSeparador img {
         width: 100%;
         height: auto;
         margin: 10px;
     }
-    #trofeu img{
+
+    #trofeu img {
         width: 100%;
         height: auto;
     }
@@ -415,7 +490,8 @@ footer {
     #membros {
         width: 90%;
     }
-    #Jorge{ 
+
+    #Jorge {
         display: flex;
         flex-direction: column;
         align-items: center;
