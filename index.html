@@ -105,8 +105,6 @@
                         categoria “Core Values”. Agora, estamos nos preparando para a etapa Nacional que ocorrerá em
                         Brasília
                         neste mês de março.</p>
-
-
                 </div>
 
 
@@ -221,26 +219,26 @@
                                 let index = 0;
                                 const images = document.querySelectorAll(".carousel-images img");
                                 const total = images.length;
-                                
+
                                 function showSlide() {
                                     const offset = -index * 100;
                                     document.querySelector(".carousel-images").style.transform = `translateX(${offset}%)`;
                                 }
-                                
+
                                 function nextSlide() {
                                     index = (index + 1) % total;
                                     showSlide();
                                 }
-                                
+
                                 function prevSlide() {
                                     index = (index - 1 + total) % total;
                                     showSlide();
                                 }
-                                
+
                                 setInterval(nextSlide, 3000); // Altera a imagem a cada 3 segundos
                             </script>
                         </div>
-                        
+
                     </div>
 
 
@@ -259,38 +257,78 @@
                     <img id="imgPatricia" src="assets/img/projeto/patricia.jpeg" alt="Patricia">
                 </div>
                 <p>Assim, conseguimos concluir um desafio para oceanografia: O mapeamento de raias migratórias.</p>
-                <p>Para solucioná-lo, a nossa equipe pensou em um dispositivo para o mapeamento de raias migratórias. O
-                    protótipo é feito de arduino, que funciona como cérebro do dispositivo: armazenando dados, um módulo
-                    de
-                    comunicação, podendo também processar os dados de sensores e controlando suas funções; possuindo
-                    dois
-                    sensores, o primeiro para identificar uma determinada espécie com base no seu porte físico e
-                    especificidade de tamanho. Avaliado por Paulo Ribeiro, professor de BICT, que apontou melhorias,
-                    tais
-                    como: um dispositivo FIXO e análise dos dados poderiam ser por duas linguagens de programação sendo
-                    Python e C++.
-                </p>
-                <p>Os sensores serão instalados em pontos estratégicos da rota da espécie migratória, quando o animal
-                    passar
-                    pelo sensor ele vai enviar um sinal para o arduíno, o arduíno registra a data e a hora da detecção
-                    dados
-                    coletados podem ser analisados utilizando softwares de estatísticas e visualização de dados,
-                    permitindo
-                    a identificação dos padrões nas datas migratórias (época do ano, duração da migração) e fatores
-                    ambientais (temperatura da água e condições climáticas).
-                </p>
-                <p>Apresentamos a nossa solução no LabAqua - Laboratório de oceanografia da Universidade Federal do
-                    Maranhão- , compartilhamos nosso projeto com a Rafaela Maria, oceanógrafa. Ela destacou a
-                    importância da
-                    pesquisa sobre o projeto e o Espadarte Pristis Pristis.</p>
-                <p>Junto a Rafaela, Keyton Coelho, também oceanógrafo, destacou os mesmos detalhes que Rafaela, porém,
-                    chamou a nossa atenção sobre a falta de ações sobre a educação ambiental e da conscientização da
-                    importância do Espadarte em nossa sociedade.</p>
-                <p>Com esses feedbacks, concluímos mais uma etapa: compartilhar e alertar pessoas sobre a conservação de
-                    uma
-                    espécie para o ecossistema marinho. Chamamos atenção para esse estudo e sobre a espécie, o estudo
-                    que
-                    nos levou a entender e compartilhar a nossa pesquisa.</p>
+
+                <div id="prototipo">
+                    <p>Para solucioná-lo, a nossa equipe pensou em um dispositivo para o mapeamento de raias
+                        migratórias. O
+                        protótipo é feito de arduino, que funciona como cérebro do dispositivo: armazenando dados, um
+                        módulo
+                        de
+                        comunicação, podendo também processar os dados de sensores e controlando suas funções; possuindo
+                        dois
+                        sensores, o primeiro para identificar uma determinada espécie com base no seu porte físico e
+                        especificidade de tamanho. Avaliado por Paulo Ribeiro, professor de BICT, que apontou melhorias,
+                        tais
+                        como: um dispositivo FIXO e análise dos dados poderiam ser por duas linguagens de programação
+                        sendo
+                        Python e C++.
+                    </p>
+                    <div class="evolution-container">
+                        <div>
+                            <img src="assets/img/prototipo/desenhoPrototipo.png" alt="Primeira versão">
+                            <p>Ideia inicial</p>
+                        </div>
+
+                        <div> <img src="assets/img/prototipo/primeiraVersao.jpeg" alt="Segunda versão">
+                            <p>Segunda versão.</p>
+                        </div>
+                        <div> <img src="assets/img/prototipo/VersaoAtual-removebg-preview.png" alt="Versão final">
+                            <p>Versão atual</p>
+                        </div>
+
+
+
+                    </div>
+                    <div id="adaFruit">
+                        <p>Os sensores serão instalados em pontos estratégicos da rota da espécie migratória, quando o
+                            animal
+                            passar
+                            pelo sensor ele vai enviar um sinal para o arduíno, o arduíno registra a data e a hora da
+                            detecção
+                            dados
+                            coletados podem ser analisados utilizando softwares de estatísticas e visualização de dados,
+                            permitindo
+                            a identificação dos padrões nas datas migratórias (época do ano, duração da migração) e
+                            fatores
+                            ambientais (temperatura da água e condições climáticas).
+                        </p>
+                        <img src="assets/img/prototipo/Imagem colada.png" alt="">
+                    </div>
+
+                </div>
+                <div id="espadarte">
+                    <div id="paragrafosPristis">
+                        <p>Apresentamos a nossa solução no LabAqua - Laboratório de oceanografia da Universidade Federal do
+                            Maranhão- , compartilhamos nosso projeto com a Rafaela Maria, oceanógrafa. Ela destacou a
+                            importância da
+                            pesquisa sobre o projeto e o Espadarte Pristis Pristis.</p>
+                        
+                        <p>Junto a Rafaela, Keyton Coelho, também oceanógrafo, destacou os mesmos detalhes que Rafaela,
+                            porém,
+                            chamou a nossa atenção sobre a falta de ações sobre a educação ambiental e da conscientização da
+                            importância do Espadarte em nossa sociedade.</p>
+
+                    </div>
+                    <img src="assets/img/projeto/PristisPristis-removebg-preview.png" alt="">
+                </div>
+                <div id="ultimoParagrafo">
+                    <p>Com esses feedbacks, concluímos mais uma etapa: compartilhar e alertar pessoas sobre a conservação de
+                        uma
+                        espécie para o ecossistema marinho. Chamamos atenção para esse estudo e sobre a espécie, o estudo
+                        que
+                        nos levou a entender e compartilhar a nossa pesquisa.</p>
+                </div>
+              
             </section>
             <section class="sessoesTemp" id="compartilhamento">
                 <div class="subtitulo">
