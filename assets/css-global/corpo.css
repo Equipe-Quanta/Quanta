@@ -26,6 +26,34 @@ body {
     border-radius: 20px;
 }
 
+main {
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 1 1 100vw;
+}
+
+h3,
+h2 {
+    padding: 0;
+    margin: 20px 0;
+
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+ .subtitulo {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 
 /*=========== RESPONSIVIDADE ============== */
 @media screen and (max-width: 730px) {
