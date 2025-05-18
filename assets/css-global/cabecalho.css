@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    scrollbar-width: thin;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+header.small {
+    height: 50px;
+    transition: all 0.3s ease;
+}
+
+header.small .nav-bar {
+    padding: 0.2rem 2rem;
+}
+
+/* ================== NAVBAR PADRÃO ================== */
+.nav-bar {
+    width: 100%;
+    background-color: #101841f5;
+    box-shadow: 2px 7px 10px #16033fc0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out; /* Suavização */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 5rem;
+    z-index: 1000;
+    height: 100px; /* Altura padrão */
+}
+
+.nav-bar::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(../img-global/logo-background/bannerRandom.png);
+    background-position: center;
+    filter: blur(1.5px); 
+    z-index: -2;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 90px;
+    transition: width 0.3s ease;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    transition: opacity 0.3s ease-in-out;
+}
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-decoration: none;
+}
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #5a628a;
+}
+
+/* ================== MENU RESPONSIVO ================== */
+.mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+}
+
+
+.mobile-menu-icon img {
+    width: 36px;
+   
+}
+
+/* Quando o menu está ativado, expande a navbar */
+.nav-bar.expanded {
+    height: 250px; /* Expansão do menu */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+}
+
+/* Esconde a lista de navegação no layout padrão */
+@media screen and (max-width: 768px) {
+ 
+    button {
+        background: none;
+        border: none;
+        cursor: pointer;
+     
+    }
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 15px;
+    }
+
+    /* Quando expandir, mostrar os itens da nav */
+    .nav-bar.expanded .nav-list {
+        display: flex;
+        padding: 20px;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-bar {
+        padding: 0.5rem 1rem;
+    }
+
+    .logo img {
+        width: 70px;
+    }
+}
