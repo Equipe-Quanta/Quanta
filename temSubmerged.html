@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipe Quanta</title>
+    <link rel="stylesheet" href="assets/temporadas/submerged/CSS/style.css">
+    <link rel="shortcut icon" href="assets/img/logo-background/atomo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <script>
+            window.addEventListener("scroll", function () {
+                let header = document.querySelector("header");
+                let logo = document.querySelector(".logo img");
+                let navBar = document.querySelector(".nav-bar");
+
+                // Se estiver em modo mobile, não executa nada
+                if (window.innerWidth <= 768) return;
+
+                if (window.scrollY > 50) {
+                    header.classList.add("small");
+                    logo.style.width = "50px";
+                    navBar.style.height = "60px";
+                } else {
+                    header.classList.remove("small");
+                    logo.style.width = "90px";
+                    navBar.style.height = "80px";
+                }
+
+                // Se o menu estiver expandido, ajusta a altura conforme a rolagem
+                if (navBar.classList.contains("expanded")) {
+                    navBar.style.height = window.scrollY > 50 ? "220px" : "250px";
+                }
+            });
+        </script>
+
+        <nav class="nav-bar">
+            <div class="logo">
+                <a href="index.html"><img src="assets/img/logo-background/4.png.png" alt="logo"></a>
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#projeto" class="nav-link">Projeto Pesquisa</a></li>
+                    <li class="nav-item"><a href="#compartilhamento" class="nav-link">Compartilhamento</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()">
+                    <img class="icon" src="assets/img/menu/menu_white_36dp.svg" alt="menuShow">
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <article id="tempSubmerged">
+            <section class="sessoesTemp">
+                <div class="subtitulo">
+                    <h2>TEMPORADA SUBMERGED</h2>
+                </div>
+                <p>Atualmente estamos vivenciando a SUBMERGED℠ (temporada 2024/25). Durante ela, as equipes da FIRST
+                    LEGO
+                    League usaram o pensamento criativo e a tecnologia LEGO® para explorar as camadas do oceano e trazer
+                    seus aprendizados e ideias à tona enquanto "navegam" em direção ao futuro. A temporada propôs o
+                    seguinte
+                    desafio para as equipes: <strong>Mergulhar em um problema enfrentado por pessoas que exploram os
+                        oceanos</strong>.
+                </p>
+            </section>
+
+            <section class="sessoesTemp" id="projeto">
+                <div class="subtitulo">
+                    <h2>NOSSO PROJETO</h2>
+                </div>
+                <p>Com base no desafio da temporada Submerged, desenvolvemos o projeto de inovação, venha conhecer! </p>
+                <p>Iniciamos a pesquisa buscando por profissionais que exploraram os oceanos encontrados em São Luís do
+                    Maranhão, cidade que habitamos, na primeira etapa identificamos: oceanográfos, biólogos marinhos,
+                    pescadores e marinheiros. A partir de uma análise e orientação, delimitamos o nosso estudo em uma
+                    profissão, dessa forma conseguimos identificar um problema e solucionar de acordo com o objetivo da
+                    equipe. A área escolhida foi a oceanografia, os oceanográfos estudam os oceanos, rios, mares e todo
+                    o ecossistema marinho.</p>
+
+                <p>A partir de uma análise criteriosa, delimitamos o estudo em uma profissão, assim conseguimos ampliar
+                    nosso estudo, identificar um problema e solucionar de acordo com o objetivo da equipe.</p>
+                <div id="Jorge">
+                    <img id="Imgjorge" src="assets/img/projeto/jorge.jpeg" alt="">
+                    <div class="p1">
+                        <p>A profissão escolhida pela equipe foram os oceanógrafos, aqueles que estudam os oceanos,
+                            mares, rios
+                            e
+                            lagos, e os seres vivos que neles habitam. Visitamos a exposição Internacional Sawfish Day
+                            Brazil,
+                            organizada pelo grupo de estudos de Elasmobrânquios Amazônico da UFMA (Universidade Federal
+                            do
+                            Maranhão), que dá ênfase na espécie Espadarte Pristis Pristis, ou Peixe-Serra, que
+                            posteriormente se
+                            tornou nosso foco de pesquisa. Lá conhecemos o oceanógrafo do grupo Jorge, que deu ênfase no
+                            Espadarte e
+                            a dificuldade de mapeá-la para conseguir informações precisas por ser uma espécie
+                            migratória.
+                        </p>
+                        <div class="carousel">
+                            <div class="carousel-images">
+                                <img src="assets/img/projeto/visitaRefesa.png" alt="Imagem 1">
+                                <img src="assets/img/projeto/visitaRefesa1.png" alt="Imagem 2">
+                                <img src="assets/img/projeto/visitaRefesa2.jpeg" alt="Imagem 3">
+                                <img src="assets/img/projeto/visitaRefesa3.jpeg" alt="Imagem 4">
+                                <img src="assets/img/projeto/visitaRefesa4.jpeg" alt="Imagem 5">
+                                <img src="assets/img/projeto/visitaRefesa5.jpeg" alt="Imagem 6">
+                                <img src="assets/img/projeto/visitaRefesa6.jpeg" alt="Imagem 7">
+                            </div>
+                            <div class="buttons">
+                                <button onclick="prevSlide()">&#10094;</button>
+                                <button onclick="nextSlide()">&#10095;</button>
+                            </div>
+                            <script>
+                                let index = 0;
+                                const images = document.querySelectorAll(".carousel-images img");
+                                const total = images.length;
+
+                                function showSlide() {
+                                    const offset = -index * 100;
+                                    document.querySelector(".carousel-images").style.transform = `translateX(${offset}%)`;
+                                }
+
+                                function nextSlide() {
+                                    index = (index + 1) % total;
+                                    showSlide();
+                                }
+
+                                function prevSlide() {
+                                    index = (index - 1 + total) % total;
+                                    showSlide();
+                                }
+
+                                setInterval(nextSlide, 3000); // Altera a imagem a cada 3 segundos
+                            </script>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div id="paragrafoPatricia">
+                    <div class="p1">
+                        <p>A oceanógrafa Patrícia Martins destacou problemas gerais da profissão, que engloba: grandes
+                            embarcações,
+                            comércio ilegal e desmatamento afeta a espécie. Juntando seus relatos aos do ecologista
+                            Márcio, que
+                            apontou que tudo isso contribui para o desequilíbrio marinho, de fato causa a diminuição do
+                            Peixe-Serra.
+                        </p>
+                        <img src="assets/img/projeto/ConversaPatricia.png" alt="conversa patricia">
+                    </div>
+                    <img id="imgPatricia" src="assets/img/projeto/patricia.jpeg" alt="Patricia">
+                </div>
+                <p>Assim, conseguimos concluir um desafio para oceanografia: O mapeamento de raias migratórias.</p>
+
+                <div id="prototipo">
+                    <p>Para solucioná-lo, a nossa equipe pensou em um dispositivo para o mapeamento de raias
+                        migratórias. O
+                        protótipo é feito de arduino, que funciona como cérebro do dispositivo: armazenando dados, um
+                        módulo
+                        de
+                        comunicação, podendo também processar os dados de sensores e controlando suas funções; possuindo
+                        dois
+                        sensores, o primeiro para identificar uma determinada espécie com base no seu porte físico e
+                        especificidade de tamanho. Avaliado por Paulo Ribeiro, professor de BICT, que apontou melhorias,
+                        tais
+                        como: um dispositivo FIXO e análise dos dados poderiam ser por duas linguagens de programação
+                        sendo
+                        Python e C++.
+                    </p>
+                    <div class="evolution-container">
+                        <div>
+                            <img src="assets/img/prototipo/desenhoPrototipo.png" alt="Primeira versão">
+                            <p>Ideia inicial</p>
+                        </div>
+
+                        <div> <img src="assets/img/prototipo/primeiraVersao.jpeg" alt="Segunda versão">
+                            <p>Segunda versão.</p>
+                        </div>
+                        <div> <img src="assets/img/prototipo/VersaoAtual-removebg-preview.png" alt="Versão final">
+                            <p>Versão atual</p>
+                        </div>
+
+
+
+                    </div>
+                    <div id="adaFruit">
+                        <p>Os sensores serão instalados em pontos estratégicos da rota da espécie migratória, quando o
+                            animal
+                            passar
+                            pelo sensor ele vai enviar um sinal para o arduíno, o arduíno registra a data e a hora da
+                            detecção
+                            dados
+                            coletados podem ser analisados utilizando softwares de estatísticas e visualização de dados,
+                            permitindo
+                            a identificação dos padrões nas datas migratórias (época do ano, duração da migração) e
+                            fatores
+                            ambientais (temperatura da água e condições climáticas).
+                        </p>
+                        <img src="assets/img/prototipo/Imagem colada.png" alt="">
+                    </div>
+
+                </div>
+                <div id="espadarte">
+                    <div id="paragrafosPristis">
+                        <p>Apresentamos a nossa solução no LabAqua - Laboratório de oceanografia da Universidade Federal do
+                            Maranhão- , compartilhamos nosso projeto com a Rafaela Maria, oceanógrafa. Ela destacou a
+                            importância da
+                            pesquisa sobre o projeto e o Espadarte Pristis Pristis.</p>
+                        
+                        <p>Junto a Rafaela, Keyton Coelho, também oceanógrafo, destacou os mesmos detalhes que Rafaela,
+                            porém,
+                            chamou a nossa atenção sobre a falta de ações sobre a educação ambiental e da conscientização da
+                            importância do Espadarte em nossa sociedade.</p>
+
+                    </div>
+                    <img src="assets/img/projeto/PristisPristis-removebg-preview.png" alt="">
+                </div>
+                <div id="ultimoParagrafo">
+                    <p>Com esses feedbacks, concluímos mais uma etapa: compartilhar e alertar pessoas sobre a conservação de
+                        uma
+                        espécie para o ecossistema marinho. Chamamos atenção para esse estudo e sobre a espécie, o estudo
+                        que
+                        nos levou a entender e compartilhar a nossa pesquisa.</p>
+                </div>
+              
+            </section>
+            <section class="sessoesTemp" id="compartilhamento">
+                <div id="primeiraParte">
+                    <div class="subtitulo">
+                        <h2>COMPARTILHANDO NOSSO PROJETO</h2>
+                    </div>
+                    <p>Nossas ações foram organizadas com base em educação ambiental em três eixos: utilizamos nossas redes
+                        sociais e obtivemos um alcance de 1.620 pessoas, ação presencial com 4 grupos e panfletagem para 200
+                        pessoas. </p>
+                    <img src="" alt="dados">
+                    <p>Realizamos um questionário com os universitários do curso de biologia da UFMA, UEMA e Instituto
+                        Federal.
+                    </p>
+                    <img src="" alt="quantidades e datas">
+                </div>
+               
+                <div class="image-container">
+                    <div class="image-box">
+                        <img src="assets/img/compartilhamento/Ifma.jpeg" alt="IFMA e RENAPSI">
+                        <div class="overlay">IFMA e RENAPSI</div>
+                    </div>
+                    <div class="image-box">
+                        <img src="assets/img/compartilhamento/Ifma2.jpeg" alt="IFMA">
+                        <div class="overlay">IFMA</div>
+                    </div>
+                    <div class="image-box">
+                        <img src="assets/img/compartilhamento/Renapsi.jpeg" alt="RENAPSI">
+                        <div class="overlay">RENAPSI</div>
+                    </div>
+                </div>
+                <p>Compartilhamos nosso projeto com as equipes Nautilus, Desbravadores do Conhecimento, Lion Team, Top Gun, Fídia e Tucuna. Fizemos uma troca de conhecimentos, o que tornou tudo ainda mais divertido!</p>
+                <div class="image-container">
+                    <div class="image-box">
+                        <img src="assets/img/compartilhamento/Fidia.jpeg" alt="Fídia">
+                        <div class="overlay">Fídia</div>
+                    </div>
+                    <div class="image-box">
+                        <img src="assets/img/compartilhamento/Lion Team.jpeg" alt="Lion Team">
+                        <div class="overlay">Lion Team</div>
+                    </div>
+                    <div class="image-box">
+                        <img src="assets/img/compartilhamento/Nautilus.jpeg" alt="Nautilus">
+                        <div class="overlay">Nautilus</div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-logo">
+                    <img src="assets/img/logo-background/4.png.png" alt="Logo Quanta">
+                </div>
+                <div class="footer-info">
+                    <p>&copy; 2025 Equipe Quanta. Todos os direitos reservados.</p>
+                    <p>Contato: <a href="mailto:equipequantarobotics@gmail.com">equipequanta@gmail.com</a></p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/quanta.robotics/" target="_blank">
+                        <img src="assets/img/imgFooter/social-instagram-svgrepo-com.svg" alt="Instagram">
+                    </a>
+                    <a href="https://web.facebook.com/p/Equipe-Quanta-100063715646852/?_rdc=1&_rdr" target="_blank">
+                        <img src="assets/img/imgFooter/social-facebook-svgrepo-com.svg" alt="Facebook">
+                    </a>
+                </div>
+                <p>Damos continuidade ao legado da antiga equipe, mantendo viva sua história e paixão pela robótica.</p>
+            </div>
+        </footer>
+        
+    </main>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+
+
+</html>
