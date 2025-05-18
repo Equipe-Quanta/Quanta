@@ -1,22 +1,3 @@
-main {
-    font-size: 18px;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex: 1 1 100vw;
-}
-
-h3,
-h2 {
-    padding: 0;
-    margin: 20px 0;
-
-}
-
-p {
-    line-height: 1.5;
-    margin-bottom: 20px;
-}
 
 .img-container {
     position: relative;
@@ -249,15 +230,6 @@ p {
     backdrop-filter: blur(3px);
 }
 
-#first .subtitulo {
-    margin-top: 30px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
 
 #first .fotos {
     margin: auto 30px;
