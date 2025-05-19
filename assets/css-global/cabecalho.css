@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
 
-* {
-    padding: 0;
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    scrollbar-width: thin;
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-}
-
 header.small {
     height: 50px;
     transition: all 0.3s ease;
