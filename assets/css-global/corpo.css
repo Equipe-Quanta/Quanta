@@ -57,7 +57,16 @@ p {
 
 /*=========== RESPONSIVIDADE ============== */
 @media screen and (max-width: 730px) {
+    body {
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
     .sessoes {
+        width: 90%;
         font-size: 20px;
         padding: 0 20px;
     }
