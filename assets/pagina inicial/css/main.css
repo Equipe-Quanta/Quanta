@@ -64,7 +64,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
+    width: 100%;
 }
 
 #membros {
@@ -242,6 +242,8 @@
 @media screen and (max-width: 730px) {
     .card {
         color: black;
+        margin: 0;
+        padding: 10px;
     }
 
     #cards {
@@ -253,7 +255,12 @@
     .img-container img {
         width: 100%;
         height: auto;
-        border-radius: 30px;
+        border-radius: 0 0 30px 30px;
+    }
+    #membros img{
+        width: 100%;
+        height: auto;
+        box-shadow: 0 6px 8px rgba(0, 0, 0, 0.281);
     }
 
     #quemSomos::before {
@@ -279,7 +286,7 @@
     }
 
     #imgSeparador {
-        width: 50%;
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
