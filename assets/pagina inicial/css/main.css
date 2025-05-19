@@ -90,6 +90,7 @@
     gap: 10px;
     flex-wrap: wrap;
 }
+
 #separador {
     margin: 0 20px;
     display: flex;
@@ -98,8 +99,9 @@
     justify-content: center;
     gap: 10px;
 }
+
 #separador img {
-  border-radius: 20px;
+    border-radius: 20px;
 }
 
 #bobPremiacao {
@@ -119,9 +121,11 @@
 #premiacao {
     width: 100%;
 }
+
 #round {
     width: 79%;
 }
+
 #roundPremiacao {
     width: 50%;
     height: auto;
@@ -156,7 +160,7 @@
     width: 50%;
     height: auto;
     display: flex;
-  
+
 }
 
 /*=========== Sessao "Temporadas"============== */
@@ -259,12 +263,14 @@
         justify-content: center;
         gap: 10px;
     }
+
     #separador {
         flex-direction: column;
         align-items: center;
         justify-content: center;
         width: 70%;
     }
+
     .card {
         color: black;
         margin: 0;
@@ -282,7 +288,8 @@
         height: auto;
         border-radius: 0 0 30px 30px;
     }
-    #membros img{
+
+    #membros img {
         width: 100%;
         height: auto;
         box-shadow: 0 6px 8px rgba(0, 0, 0, 0.281);
@@ -303,7 +310,8 @@
         height: auto;
         padding: 20px;
     }
-    #bob{
+
+    #bob {
         width: 50%;
         height: auto;
     }
