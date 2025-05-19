@@ -1,4 +1,4 @@
-body{
+body {
     background-image: url(../../../img-global/logo-background/sesi_robotica_2024_kv_fll.png);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -208,6 +208,8 @@ body{
 
 .image-box .overlay {
     position: absolute;
+    margin: 0;
+    padding: 0;
     top: 0;
     left: 60px;
     width: 100%;
@@ -222,6 +224,7 @@ body{
     border-radius: 10px;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
+    text-indent: 0;
 }
 
 .image-box:hover .overlay {

@@ -40,7 +40,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("../imagens/logo-background/colaboration");
+    background-image: url("../imagens/equipe/round.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -214,6 +214,7 @@
     color: black;
     background-color: rgba(188, 172, 250, 0.753);
     border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(23, 86, 221, 0.2);
 }
 
 #temporadas img:hover {
@@ -221,12 +222,12 @@
     transform: scale(1.05);
 }
 
-
 #unearthed:hover {
     transition: 1s;
     color: black;
     background-color: rgb(243, 226, 196);
     border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(181, 182, 184, 0.2);
 }
 
 
@@ -243,7 +244,6 @@
     z-index: 10;
     backdrop-filter: blur(3px);
 }
-
 
 #first .fotos {
     margin: auto 30px;
@@ -262,6 +262,10 @@
         align-items: center;
         justify-content: center;
         gap: 10px;
+    }
+
+    #round {
+        width: 100%;
     }
 
     #separador {
