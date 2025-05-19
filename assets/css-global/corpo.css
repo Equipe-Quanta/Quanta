@@ -53,7 +53,6 @@ p {
     width: 100%;
 }
 
-
 /*=========== RESPONSIVIDADE ============== */
 @media screen and (max-width: 730px) {
     body {
@@ -72,15 +71,14 @@ p {
         flex-wrap: nowrap;
         width: 100%;
         padding: 0 10px;
+        font-size: 15px;
     }
     .sessoes {
         width: 90%;
-        font-size: 20px;
         padding: 0 10px;
     }
 
     .sessoesTemp {
-        font-size: 20px;
         padding: 0 10px;
     }
 
