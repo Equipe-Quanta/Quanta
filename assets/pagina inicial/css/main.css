@@ -93,7 +93,7 @@
 #separador {
     margin: 0 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 10px;
@@ -111,22 +111,24 @@
 }
 
 #bob {
-    width: 20%;
+    width: 15%;
     height: auto;
     border-radius: 20px;
 }
+
 #premiacao {
     width: 100%;
 }
 #round {
-    width: 100%;
+    width: 79%;
 }
 #roundPremiacao {
-    width: 100%;
+    width: 50%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 30px;
 }
 
 
@@ -228,7 +230,8 @@
 /*=========== Sessao "Parceiros"============== */
 #first {
     border-radius: 30px;
-    background-color: rgba(16, 27, 148, 0.466);
+    background-color: rgb(44 60 225 / 76%);
+    color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -247,6 +250,15 @@
 
 /*=========== RESPONSIVIDADE ============== */
 @media screen and (max-width: 730px) {
+    #roundPremiacao {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
     #separador {
         flex-direction: column;
         align-items: center;
@@ -283,12 +295,17 @@
     #trofeu {
         width: 30%;
         margin-bottom: 20px;
+        border-radius: 10px;
     }
 
     #LulaMolusco {
         width: 40%;
         height: auto;
         padding: 20px;
+    }
+    #bob{
+        width: 50%;
+        height: auto;
     }
 
     #espaçoPremiacao {
