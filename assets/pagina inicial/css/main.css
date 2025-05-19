@@ -158,7 +158,6 @@
 
 #temporadas p {
     max-width: 350px;
-    /* ou qualquer valor desejado */
     text-align: justify;
 }
 
@@ -241,6 +240,16 @@
 
 /*=========== RESPONSIVIDADE ============== */
 @media screen and (max-width: 730px) {
+    .card {
+        color: black;
+    }
+
+    #cards {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .img-container img {
         width: 100%;
         height: auto;
