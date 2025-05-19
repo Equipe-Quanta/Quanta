@@ -31,14 +31,13 @@ main {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    flex: 1 1 100vw;
+    flex: 100vw;
 }
 
 h3,
 h2 {
     padding: 0;
     margin: 20px 0;
-
 }
 
 p {
@@ -72,6 +71,7 @@ p {
         justify-content: center;
         flex-wrap: nowrap;
         width: 100%;
+        padding: 0 10px;
     }
     .sessoes {
         width: 90%;

@@ -23,7 +23,6 @@
     z-index: 1000;
 }
 
-
 /*=========== 1ª Sessao "quemSomos"============== */
 
 #quemSomos {
@@ -85,35 +84,52 @@
 
 #espacoPremiacao {
     display: flex;
-    flex-direction: column;
     width: 100%;
     align-items: center;
     justify-content: center;
     gap: 10px;
     flex-wrap: wrap;
 }
-
 #separador {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+#separador img {
+  border-radius: 20px;
+}
+
+#bobPremiacao {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    width: 100%;
+    height: auto;
 }
 
-#imgSeparador {
-    width: 50%;
+#bob {
+    width: 20%;
+    height: auto;
+    border-radius: 20px;
+}
+#premiacao {
+    width: 100%;
+}
+#round {
+    width: 100%;
+}
+#roundPremiacao {
+    width: 100%;
     height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#imgSeparador img {
-    width: 90%;
-    height: auto;
-    border-radius: 20px;
-    margin: 0 10px;
-}
+
 
 #LulaMolusco {
     width: 30%;
@@ -127,7 +143,6 @@
     justify-content: center;
     width: 100%;
     margin: 0 20px 20px;
-
 }
 
 #trofeu {
@@ -135,19 +150,11 @@
     border-radius: 50px;
 }
 
-#bob {
-    width: 150px;
-}
-
 .fotosPremiacao {
-    max-width: 100%;
+    width: 50%;
     height: auto;
-    border-radius: 10px;
-}
-
-.fotosPremiacao:last-child {
-    max-height: 300px;
-    object-fit: cover;
+    display: flex;
+  
 }
 
 /*=========== Sessao "Temporadas"============== */
@@ -240,6 +247,12 @@
 
 /*=========== RESPONSIVIDADE ============== */
 @media screen and (max-width: 730px) {
+    #separador {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+    }
     .card {
         color: black;
         margin: 0;
