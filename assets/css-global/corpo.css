@@ -13,7 +13,7 @@ body {
     text-align: justify;
     display: flex;
     flex-wrap: wrap;
-    flex: 1 1 100vw;
+    flex:1 1 100vw;
 }
 
 .sessoes {
@@ -24,6 +24,7 @@ body {
     padding: 0 50px;
     margin: 40px;
     border-radius: 40px ;
+    
 }
 
 main {
@@ -71,7 +72,8 @@ p {
         font-size: 15px;
     }
     .sessoes {
-        padding: 0 10px;
+        padding: 0 15px;
+        margin: auto 20px;
     }
 
     .sessoesTemp {

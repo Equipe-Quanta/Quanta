@@ -50,11 +50,11 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+    footer {
+        margin-top: 20px;
+    }
     .footer-container {
         padding: 0 5px;
-    }
-    .footer-logo img {
-        width: 70px;
     }
     .footer-social img {
         width: 50px;

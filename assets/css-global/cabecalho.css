@@ -137,9 +137,28 @@ header.small .nav-bar {
 @media screen and (max-width: 480px) {
     .nav-bar {
         padding: 0.5rem 1rem;
+        height: 75px; /* um pouco menor que 85px */
     }
 
     .logo img {
-        width: 70px;
+        width: 60px; /* um pouco menor para caber melhor */
+    }
+
+    .nav-list {
+        gap: 10px; /* reduzido o espaçamento */
+        padding: 10px 0; /* padding vertical menor */
+    }
+
+    .nav-bar.expanded .nav-list {
+        padding: 15px 0; /* reduzido quando expandido */
+    }
+
+    .mobile-menu-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    button {
+        font-size: 1rem; /* garante clique acessível */
     }
 }
