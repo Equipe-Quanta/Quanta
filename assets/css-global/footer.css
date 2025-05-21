@@ -14,6 +14,11 @@ footer {
     align-items: center;
     gap: 10px;
 }
+.footer-social{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
 .footer-logo img {
     width: 80px;
@@ -30,14 +35,31 @@ footer {
 
 .footer-social a {
     margin: 0 10px;
+    text-decoration: none;
 }
 
 .footer-social img {
     width: 24px;
-    height: 24px;
+    height: auto;
     transition: transform 0.3s ease;
+    border-radius: 10px;
 }
 
 .footer-social img:hover {
     transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+    footer{
+        width: 100%;
+    }
+    .footer-container {
+        padding: 0 10px;
+    }
+    .footer-logo img {
+        width: 60px;
+    }
+    .footer-social img {
+        width: 20px;
+    }
 }
