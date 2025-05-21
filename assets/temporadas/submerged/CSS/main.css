@@ -229,3 +229,7 @@ body {
 .image-box:hover .overlay {
     opacity: 1;
 }
+
+@media screen and (max-width: 730px) {
+    
+}
