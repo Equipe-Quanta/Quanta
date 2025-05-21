@@ -13,7 +13,7 @@ body {
     text-align: justify;
     display: flex;
     flex-wrap: wrap;
-    flex: 1 1 100vw;
+    flex:1 1 100vw;
 }
 
 .sessoes {
@@ -22,8 +22,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding: 0 50px;
-    margin: 20px;
-    border-radius: 20px;
+    margin: 40px;
+    border-radius: 40px ;
+    
 }
 
 main {
@@ -44,7 +45,7 @@ p {
     line-height: 1.5;
     margin-bottom: 20px;
 }
- .subtitulo {
+.subtitulo {
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -56,7 +57,6 @@ p {
 /*=========== RESPONSIVIDADE ============== */
 @media screen and (max-width: 730px) {
     body {
-        overflow-x: hidden;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -69,13 +69,11 @@ p {
         align-items: center;
         justify-content: center;
         flex-wrap: nowrap;
-        width: 100%;
-        padding: 0 10px;
         font-size: 15px;
     }
     .sessoes {
-        width: 90%;
-        padding: 0 10px;
+        padding: 0 15px;
+        margin: auto 20px;
     }
 
     .sessoesTemp {
