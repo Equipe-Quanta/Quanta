@@ -104,10 +104,10 @@ header.small .nav-bar {
 
 /* Esconde a lista de navegação no layout padrão */
 @media screen and (max-width: 768px) {
+
     .nav-bar {
         padding: 0.5rem 1rem;
         height: 85px;
-        /* Altura padrão */
     }
     button {
         background: none;

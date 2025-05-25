@@ -9,9 +9,6 @@ body {
 
 /*=========== 3ª Sessao(article) "Temporada Submerged"============== */
 
-#tempSubmerged {
-    border-radius: 30px;
-}
 
 /*=========== 4ª Sessao "Sessoes da temporada"============== */
 .sessoesTemp {
@@ -22,7 +19,7 @@ body {
     flex-wrap: wrap;
     margin: 50px;
     padding: 20px;
-    border-radius: 20px 20px 0 20px;
+    border-radius: 40px;
 }
 
 
@@ -182,6 +179,7 @@ body {
 }
 
 .image-container {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -190,25 +188,33 @@ body {
     margin-top: 20px;
 }
 
-.image-box {
+.image-box,
+.image-box-equipes {
+    display: flex;
     position: relative;
     max-width: 300px;
 }
 
 .image-box img {
-    width: 100%;
     height: 200px;
-    object-fit: cover;
+
+}
+
+.image-box img,
+.image-box-equipes img {
+    width: 100%;
+    object-fit: contain;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.image-box .overlay {
+.image-box .overlay,
+.image-box-equipes .overlay {
     position: absolute;
     margin: 0;
     padding: 0;
     top: 0;
-    left: 60px;
+    left: 0px;
     width: 100%;
     height: 100%;
     display: flex;
@@ -224,7 +230,8 @@ body {
     text-indent: 0;
 }
 
-.image-box:hover .overlay {
+.image-box:hover .overlay,
+.image-box-equipes:hover .overlay {
     opacity: 1;
 }
 
@@ -248,7 +255,7 @@ body {
         text-indent: 1.5em;
     }
 
-    .subtitulo{
+    .subtitulo {
         text-indent: 0;
         text-align: center;
     }
@@ -280,12 +287,14 @@ body {
     #paragrafoPatricia #imgPatricia {
         width: 60%;
     }
-    .evolution-container{
+
+    .evolution-container {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-   
+
     }
+
     .evolution-container div {
         display: flex;
         flex-direction: column;
@@ -328,7 +337,7 @@ body {
     }
 
     .image-container {
-        padding: 10px;
+        padding-bottom: 10px;
         margin: 0;
         width: 100%;
         flex-direction: column;
@@ -337,26 +346,28 @@ body {
 
     .image-box {
         width: 100%;
+        height: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
+    .image-box-equipes img {
+        width: 100%;
+        height: 100%;
+        
+    }
     .image-box img {
-        height: 150px;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
     }
 
     .image-box .overlay {
         font-size: 14px;
-        left: 0;
-        
     }
 
     .p1 img {
         width: 80%;
     }
-
-
-
 
 }
