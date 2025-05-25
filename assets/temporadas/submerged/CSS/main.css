@@ -62,7 +62,7 @@ body {
 
 .carousel-images {
     display: flex;
-    width:  100%;
+    width: 100%;
     flex: 0 0 100%;
     object-fit: cover;
     transition: transform 0.5s ease-in-out;
@@ -231,14 +231,26 @@ body {
 @media screen and (max-width: 730px) {
     #tempSubmerged {
         width: 100%;
-        padding: 20px;
+        padding: 10px;
     }
 
     .sessoesTemp {
         flex-direction: column;
         align-items: center;
         margin: 10px;
+        margin-top: 10%;
         padding: 10px;
+
+    }
+
+    .sessoesTemp p {
+        padding: 10px;
+        text-indent: 1.5em;
+    }
+
+    .subtitulo{
+        text-indent: 0;
+        text-align: center;
     }
 
     #Jorge {
@@ -249,10 +261,12 @@ body {
     #Imgjorge {
         width: 60%;
     }
-    .carousel{
+
+    .carousel {
         width: 100%;
         height: auto;
     }
+
     .carousel-images img {
         width: 100%;
         height: auto;
@@ -266,7 +280,12 @@ body {
     #paragrafoPatricia #imgPatricia {
         width: 60%;
     }
-
+    .evolution-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+   
+    }
     .evolution-container div {
         display: flex;
         flex-direction: column;
@@ -279,7 +298,6 @@ body {
 
     .evolution-container img {
         width: 60%;
-        height: auto;
     }
 
     #adaFruit img {
@@ -292,8 +310,16 @@ body {
     }
 
     #espadarte img {
-        width: 100%;
+        width: 90%;
         height: auto;
+    }
+
+    #ultimoParagrafo {
+        margin: 0px;
+    }
+
+    #paragrafosPristis {
+        padding: 0px;
     }
 
     #compartilhamento {
@@ -302,13 +328,18 @@ body {
     }
 
     .image-container {
+        padding: 10px;
+        margin: 0;
         width: 100%;
         flex-direction: column;
         align-items: center;
     }
 
     .image-box {
-        max-width: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .image-box img {
@@ -317,6 +348,8 @@ body {
 
     .image-box .overlay {
         font-size: 14px;
+        left: 0;
+        
     }
 
     .p1 img {
