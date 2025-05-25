@@ -6,6 +6,7 @@
 }
 
 .img-container img {
+
     width: 100%;
     height: auto;
     border-radius: 30px;
@@ -293,11 +294,12 @@
         align-items: center;
         justify-content: center;
     }
-
+  
     .img-container img {
         width: 100%;
         height: auto;
         border-radius: 0 0 30px 30px;
+        
     }
 
     #membros img {

@@ -53,11 +53,16 @@ footer {
     footer {
         margin-top: 20px;
     }
+    .footer-logo img{
+        width: 60px;
+    }
+ 
     .footer-container {
         padding: 0 5px;
+        margin: 0;
     }
     .footer-social img {
-        width: 50px;
+        width: 40px;
         border-radius: 20px;
     }
 }
