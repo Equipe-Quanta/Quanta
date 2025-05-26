@@ -178,6 +178,20 @@ body {
     align-items: center;
 }
 
+.image-panfleto {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin: 20px;
+}
+.image-panfleto img {
+    width: 20%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
 .image-container {
     width: 100%;
     display: flex;
@@ -335,6 +349,15 @@ body {
         flex-direction: column;
         align-items: center;
     }
+    .image-panfleto {
+        width: 100%;
+        height: 200px;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        border-radius: 20px;
+    }
 
     .image-container {
         padding-bottom: 10px;
@@ -351,11 +374,13 @@ body {
         justify-content: center;
         align-items: center;
     }
+
     .image-box-equipes img {
         width: 100%;
         height: 100%;
-        
+
     }
+
     .image-box img {
         object-fit: cover;
         width: 100%;
